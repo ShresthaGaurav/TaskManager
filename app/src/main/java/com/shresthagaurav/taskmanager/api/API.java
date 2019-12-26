@@ -1,6 +1,7 @@
 package com.shresthagaurav.taskmanager.api;
 
 import com.shresthagaurav.taskmanager.model.ImageModel;
+import com.shresthagaurav.taskmanager.model.UserToken;
 import com.shresthagaurav.taskmanager.model.User_model;
 
 
@@ -18,4 +19,6 @@ public interface API {
     @Multipart
     @POST("upload")
     Call<ImageModel> uploadImage(@Part MultipartBody.Part imageFile);
+    @POST("users/login")
+    Call<UserToken> login(@Body User_model cud);
 }

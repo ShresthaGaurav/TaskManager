@@ -4,6 +4,7 @@ public class ImageModel {
     String filename;
     String destination;
 
+
     public ImageModel(String filename, String destination) {
         this.filename = filename;
         this.destination = destination;

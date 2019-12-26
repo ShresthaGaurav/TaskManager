@@ -7,6 +7,11 @@ public class User_model {
     private String password;
     private String image;
 
+    public User_model(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public User_model(String firstName, String lastName, String username, String password, String image) {
         this.firstName = firstName;
         this.lastName = lastName;
